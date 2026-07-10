@@ -1,35 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ta">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>VRRITTAM Login</title>
 
 <style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
 
 body{
-margin:0;
-font-family:Arial,sans-serif;
-background:linear-gradient(135deg,#0f4c81,#4facfe);
+height:100vh;
 display:flex;
 justify-content:center;
 align-items:center;
-height:100vh;
+background:linear-gradient(135deg,#0f4c81,#4facfe);
 }
 
 .login-box{
-background:#ffffff;
+background:#fff;
 padding:40px;
-width:320px;
+width:350px;
 border-radius:15px;
 box-shadow:0 10px 25px rgba(0,0,0,.3);
 text-align:center;
 }
 
-h2{
+h1{
 color:#0f4c81;
-margin-bottom:20px;
+margin-bottom:10px;
 }
+
+p{
+color:#666;
+margin-bottom:25px;
+}
+
 input{
 width:100%;
 padding:12px;
@@ -48,18 +58,25 @@ border:none;
 border-radius:8px;
 font-size:18px;
 cursor:pointer;
+transition:.3s;
 }
 
 button:hover{
-background:#08365c;
-}
-
-a{
-text-decoration:none;
-color:#0f4c81;
+background:#08345c
+.login-link{
+margin-top:20px;
 font-size:14px;
 }
 
+.login-link a{
+color:#0f4c81;
+text-decoration:none;
+font-weight:bold;
+}
+
+.login-link a:hover{
+text-decoration:underline;
+}
 </style>
 </head>
 
@@ -67,22 +84,29 @@ font-size:14px;
 
 <div class="login-box">
 
-<h2>VRRITTAM Login</h2>
+<h1>VRRITTAM</h1>
 
-<input type="email" placeholder="Email Address">
+<p>உங்கள் கணக்கில் உள்நுழையுங்கள்</p>
 
-<input type="password" placeholder="Password">
-<button>Login</button>
+<input type="text" placeholder="பயனர் பெயர்">
 
-<br><br>
+<input type="password" placeholder="கடவுச்சொல்">
 
-<a href="#">Forgot Password?</a>
+<button onclick="login()">Login</button>
 
-<br><br>
-
-<a href="#">Create Account</a>
+<div class="login-link">
+புதிய பயனரா?
+<a href="#">Register</a>
+</div>
 
 </div>
 
+<script>
+function login(){
+    alert("Welcome to VRRITTAM!");
+    window.location.href="index.html";
+}
+</script>
+
 </body>
-</html>  
+</html>
