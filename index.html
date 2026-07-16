@@ -14,7 +14,9 @@ font-family:Arial,sans-serif;
 }
 
 body{
-background: linear-gradient(180deg,#dff6ff 0%, #bfe9ff 45%, #87ceeb 100%);
+background: linear-gradient(to bottom,#87CEEB,#BFEFFF,#EAF8FF);
+background-attachment: fixed;
+overflow-x: hidden;
 color:#0b2e4f;
 }
 
@@ -86,12 +88,38 @@ margin-top:80px;
 text-align:center;
 padding:20px;
 background:rgba(0,0,0,0.2);
+}.cloud{
+    ...
+}
+
+.cloud::before,
+.cloud::after{
+    ...
+}
+
+.cloud1{
+    ...
+}
+
+.cloud2{
+    ...
+}
+
+.cloud3{
+    ...
+}
+
+@keyframes moveCloud{
+    from{transform:translateX(0);}
+    to{transform:translateX(1800px);}
 }
 </style>
 </head>
 
 <body>
-
+<div class="cloud cloud1"></div>
+<div class="cloud cloud2"></div>
+<div class="cloud cloud3"></div>
 <nav>
 <div class="logo">
     <img src="assets/vrrittam logo.jpeg" alt="VRRITTAM Logo" width="70">
