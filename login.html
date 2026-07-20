@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VRRITTAM Login</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(135deg,#0f4c81,#4facfe);
+}
+
+.login-box{
+background:#fff;
+padding:40px;
+width:350px;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,.3);
+text-align:center;
+}
+
+h1{
+color:#0f4c81;
+margin-bottom:10px;
+}
+
+p{
+color:#666;
+margin-bottom:25px;
+}
+
+input{
+width:100%;
+padding:12px;
+margin:10px 0;
+border:1px solid #ccc;
+border-radius:8px;
+font-size:16px;
+}
+
+button{
+width:100%;
+padding:12px;
+background:#0f4c81;
+color:white;
+border:none;
+border-radius:8px;
+font-size:18px;
+cursor:pointer;
+transition:.3s;
+}
+
+button:hover{
+background:#08345c
+.login-link{
+margin-top:20px;
+font-size:14px;
+}
+
+.login-link a{
+color:#0f4c81;
+text-decoration:none;
+font-weight:bold;
+}
+
+.login-link a:hover{
+text-decoration:underline;
+}
+</style>
+</head>
+
+<body>
+
+<div class="login-box">
+<img src="assets/vrrittam-logo.png" alt="VRRITTAM Logo" width="90">    
+
+<h1>Welcome Back</h1>
+
+<p>Sign in to continue to VRRITTAM</p>
+
+<input type="text" placeholder="பயனர் பெயர்">
+
+<input type="password" placeholder="கடவுச்சொல்">
+
+<button onclick="login()">Login</button>
+
+<div class="login-link">
+புதிய பயனரா?
+<a href="#">Register</a>
+</div>
+
+</div>
+
+<script>
+function login(){
+    alert("Welcome to VRRITTAM!");
+    window.location.href="dashboard.html";
+}
+</script>
+
+</body>
+</html>
