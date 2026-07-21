@@ -100,13 +100,33 @@ text-decoration:underline;
 </div>
 
 </div>
-
 <script>
-function login(){
-    alert("Welcome to VRRITTAM!");
-    window.location.href="dashboard.html";
+function login() {
+
+    let username = document.getElementById("username").value;
+
+    if (username === "student") {
+        window.location.href = "student-dashboard.html";
+    }
+
+    else if (username === "teacher") {
+        window.location.href = "teacher-dashboard.html";
+    }
+
+    else if (username === "schooladmin") {
+        window.location.href = "school-admin.html";
+    }
+
+    else if (username === "superadmin") {
+        window.location.href = "super-admin.html";
+    }
+
+    else if (username === "parent") {
+        window.location.href = "parent-dashboard.html";
+    }
+
+    else {
+        alert("Invalid User Name");
+    }
 }
 </script>
-
-</body>
-</html>
